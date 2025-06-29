@@ -12,7 +12,7 @@ const calculator = {
 
 const existingTheme = localStorage.getItem("calculator-theme")
   ? localStorage.getItem("calculator-theme")
-  : theme1;
+  : "theme1";
 const themeToggles = document.querySelectorAll("lable");
 const decimalPercision = 10;
 
@@ -145,7 +145,7 @@ function handleInput(input) {
         } = e.target
         handleInput(textContent)
     })
- })
+ });
 
  document.body.addEventListener('keyup' , e =>{
     let {key} = e
